@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - Meu Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Dashboard</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planejamento.html">Planejamento</a></li>
+        <li><a href="avatar.html">Avatar & XP</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="calendar">
+      <h2>Calendário</h2>
+      <!-- Input para selecionar a data -->
+      <input type="date" id="dataSelecionada">
+    </section>
+    
+    <section id="tasks">
+      <h2>Tarefas do Dia</h2>
+      <ul id="listaTarefas">
+        <!-- Exemplo de tarefa -->
+        <li>
+          <input type="checkbox" class="task-checkbox" data-xp="10">
+          <span>Tarefa Exemplo (10 XP)</span>
+        </li>
+      </ul>
+      <button id="salvarTarefas">Salvar Conclusões</button>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Meu Planner</p>
+  </footer>
+  
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
