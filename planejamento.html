@@ -2,34 +2,28 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Planejamento - Meu Planner</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan-Org - Planejamento</title>
+  <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
   <header>
     <h1>Planejamento</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="index.html">Tarefas</a></li>
+        <li><a href="planejamento.html">Planejamento</a></li>
         <li><a href="avatar.html">Avatar & XP</a></li>
       </ul>
     </nav>
   </header>
-  
   <main>
-    <section id="planejamentoTarefas">
-      <h2>Planeje suas Tarefas</h2>
-      <textarea id="listaPlanejamento" rows="10" placeholder="Liste aqui suas tarefas, compromissos e metas para o trabalho..."></textarea>
-      <button id="salvarPlanejamento">Salvar Planejamento</button>
+    <section id="planningSection">
+      <h2>Planeje suas atividades</h2>
+      <textarea id="planningText" rows="10" placeholder="Liste aqui seus compromissos e metas..."></textarea><br>
+      <button id="savePlanningBtn">Salvar Planejamento</button>
     </section>
   </main>
-  
-  <footer>
-    <p>&copy; 2025 Meu Planner</p>
-  </footer>
-  
-  <script type="module" src="js/script.js"></script>
+  <script type="module" src="src/js/script.js"></script>
 </body>
 </html>
