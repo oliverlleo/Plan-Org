@@ -2,33 +2,33 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meu Planner - Home</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan-Org - Tarefas</title>
+  <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
   <header>
-    <h1>Meu Planner</h1>
+    <h1>Plan-Org</h1>
     <nav>
       <ul>
-        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="index.html">Tarefas</a></li>
         <li><a href="planejamento.html">Planejamento</a></li>
         <li><a href="avatar.html">Avatar & XP</a></li>
       </ul>
     </nav>
   </header>
-  
   <main>
-    <section class="intro">
-      <h2>Bem-vindo!</h2>
-      <p>Utilize este sistema para organizar suas tarefas, acompanhar seu progresso e se motivar com a gamificação!</p>
+    <section id="task-section">
+      <h2>Minhas Tarefas</h2>
+      <div>
+        <label for="datePicker">Selecione a data:</label>
+        <input type="date" id="datePicker">
+      </div>
+      <ul id="taskList"></ul>
+      <button id="addTaskBtn">Adicionar Tarefa</button>
+      <button id="saveTasksBtn">Salvar Tarefas</button>
     </section>
   </main>
-  
-  <footer>
-    <p>&copy; 2025 Meu Planner</p>
-  </footer>
-  
-  <script type="module" src="js/script.js"></script>
+  <script type="module" src="src/js/script.js"></script>
 </body>
 </html>
